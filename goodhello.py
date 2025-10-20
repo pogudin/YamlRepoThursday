@@ -1,5 +1,5 @@
 def hello():
-    print("Hello students!")
+    print("Hello DevOps!")
 
 def bye():
     print("Good bye!")
