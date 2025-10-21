@@ -19,7 +19,7 @@ jobs:
           options: "--check --diff"
           src: "."
       - name: Run Bandit scan
-        uses: shundor/bandit-action@v1
+        uses: reactive-firewall/python-bandit-scan@v2.3
         with: 
           path: "."
           level: high
