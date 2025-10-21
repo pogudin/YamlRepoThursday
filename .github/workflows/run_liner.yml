@@ -32,5 +32,4 @@ jobs:
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RUN_ALL_LINTERS: false
           VALIDATE_PYTHON: true
