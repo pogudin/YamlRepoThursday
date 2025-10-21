@@ -2,8 +2,9 @@
 name: Lint
 
 on: # yamllint disable-line rule:truthy
-  push: null
-  pull_request: null
+  # push: null
+  # pull_request: null
+  workflow_dispatch: null
 
 permissions: {}
 
@@ -28,8 +29,7 @@ jobs:
           persist-credentials: false
 
       - name: Super-linter
-        #uses: super-linter/super-linter@v8.2.1 # x-release-please-version
-        uses: docker://github/super-liner:latest
+        uses: super-linter/super-linter@v8.2.1 # x-release-please-version
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
