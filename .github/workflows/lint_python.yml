@@ -20,8 +20,8 @@ jobs:
           src: "."
       - name: Run Bandit scan
         uses: shundor/bandit-action@v1
-          with: 
-            path: "."
-            level: high
-            confidence: high
-            exit_zero: true           
+        with: 
+          path: "."
+          level: high
+          confidence: high
+          exit_zero: true           
