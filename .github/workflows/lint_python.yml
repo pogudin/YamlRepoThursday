@@ -26,6 +26,6 @@ jobs:
         uses: reactive-firewall/python-bandit-scan@v2.3
         with: 
           path: "."
-          level: high
-          confidence: high
+          level: low
+          confidence: low
           exit_zero: true           
