@@ -1,0 +1,15 @@
+---
+name: Run Python Linters
+
+on: 
+  push: null
+
+jobs:
+  run_linters:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - Run Linters
+      uses: psf/black@stable
+      uses: py-actions/flake8@v2 
