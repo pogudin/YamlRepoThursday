@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - Run Linters
-      uses: psf/black@stable
-      uses: py-actions/flake8@v2 
+      - name: Run Linters
+        uses: psf/black@stable
+        uses: py-actions/flake8@v2 
